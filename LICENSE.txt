@@ -1,0 +1,18 @@
+GeckoCIRCUITS is a fast circuit/system simulator
+
+Copyright (C) 2013 ETH Zürich Copyright (C) 2018 Andreas Müsing, Gecko-Simulations (in Liquidation) AG
+
+This program is dual-licensed: you can redistribute it and/or modify it
+under the terms of the GNU General Public License version 3 as published 
+by the Free Software Foundation. For the terms of this license, see the
+file gpl_v3.txt or http://www.gnu.org/licenses/ .
+
+For a commercial usage/redistribution, please contact Gecko-Simulations AG
+(contact@gecko-simulations.com) to obtain a (non-GPL) commercial license.
+
+This program is distributed in the hope that it will be useful, but WITHOUT 
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see http://www.gnu.org/licenses/ .
