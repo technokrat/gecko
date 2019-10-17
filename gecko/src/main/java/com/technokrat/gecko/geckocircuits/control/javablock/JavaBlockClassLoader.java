@@ -90,12 +90,24 @@ public final class JavaBlockClassLoader extends ClassLoader {
     protected Class<?> findClass(final String name) throws
             ClassNotFoundException {
 
-        extendClassPath();
+        // extendClassPath();
         if (_classMap.containsKey(name)) {   
             final byte[] classBytes = _classMap.get(name).getClassBytes();
             return defineClass(name, classBytes, 0, classBytes.length);
-        } else {            
-            return super.findClass(name);
+        } else {
+            try {
+                final File tmpfile = new File(GlobalFilePathes.DATNAM);
+                final File file = new File(tmpfile.getAbsolutePath());
+                final String path = file.getAbsolutePath();
+                final URL url = new URL("file://" + path + "/");
+                System.out.print(url);
+
+                return Class.forName(name, true, new URLClassLoader(new URL[] { url }));
+            } catch (Exception ex) {
+
+            }
+            return null;
+            // return super.findClass(name);
         }
     }
 }

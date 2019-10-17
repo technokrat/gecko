@@ -36,7 +36,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.PrintStream;
 import javax.swing.*;
-import jsyntaxpane.DefaultSyntaxKit;
+import de.sciss.syntaxpane.DefaultSyntaxKit;
 
 public class ScriptWindow extends javax.swing.JFrame {
     ExtraFilesWindow _extSourceWindow;
