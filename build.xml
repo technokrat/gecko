@@ -10,6 +10,15 @@
 <project name="GeckoCIRCUITS" default="default" basedir=".">
     <description>Builds, tests, and runs the project GeckoCIRCUITS.</description>
     <import file="nbproject/build-impl.xml"/>
+    <property name="build.dir" value="./build"/> 
+    <property name="dist.dir" value="./dist"/> 
+    <property name="build.classes.dir" value="./build"/> 
+    <property name="dist.javadoc.dir" value="./dist"/> 
+    <property name="build.test.classes.dir" value="./build"/> 
+    <property name="build.test.results.dir" value="./build"/> 
+    <property name="build.classes.excludes" value="./none"/> 
+    <property name="dist.jar" value="./dist/GeckoCIRCUITSMM.jar"/> 
+
     <!--
 
     There exist several targets which are by default empty and which can be 
@@ -81,7 +90,6 @@
         </java>        
     </target> -->
     
-    
     <!--target name="-post-compile">
         <delete verbose="true">     
             <fileset dir="${build.classes.dir}">
@@ -90,16 +98,16 @@
         </delete>
     </target-->  
     
-    <target name="-post-jar">
-        <property name="proguard.jar.path" value="/home/andy/Gecko/proguard4.11/lib/proguard.jar" />
+    <!--target name="-post-jar">
+        <property name="proguard.jar.path" value="/home/mario/software/proguard6.0.3/lib/proguard.jar" />
         <property name="java.home.path" value="/path/to/java/home" />
         <echo message="Obfuscating ${dist.jar}..."/>
 
         <java jar="${proguard.jar.path}" fork="true">
-            <arg value="@GeckoCIRCUITSobf.pro"/>
+        <arg value="@GeckoCIRCUITSobf.pro"/>
         </java>        
-        <!--move file="dist/GeckoCIRCUITSobf.jar" tofile="dist/GeckoCIRCUITS.jar"/-->
-    </target>
+        <!move file="dist/GeckoCIRCUITSobf.jar" tofile="dist/GeckoCIRCUITS.jar"/>
+    </target-->
     
     
 </project>
