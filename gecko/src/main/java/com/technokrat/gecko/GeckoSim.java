@@ -493,8 +493,6 @@ public class GeckoSim extends JApplet {
     // funktioniert nur, wenn Java 1.6 installiert ist -> 
     private void checkJavaVersion() {
         try {
-            System.out.println(System.getProperty("java.version"));
-
             if (Fenster.IS_APPLET) {
                 String javaVersion = System.getProperty("java.version");
                 double jV = (new Double(javaVersion.substring(0, 3))).doubleValue();
@@ -509,7 +507,7 @@ public class GeckoSim extends JApplet {
             Properties sysProp = System.getProperties();
             //sysProp.list(System.out);
             String javaVersion = sysProp.getProperty("java.runtime.version");
-            double jV = (new Double(javaVersion.substring(0, 3))).doubleValue();
+            double jV = (new Double(javaVersion.replace("+", ".").substring(0, 3))).doubleValue();
 
             if (jV < 1.6) {
                 StringBuffer errorMessage = new StringBuffer();
@@ -529,7 +527,7 @@ public class GeckoSim extends JApplet {
 
             }
         } catch (Throwable err) {
-            System.err.println("could not check java version!!!");
+            System.err.println("Could not check java version.");
         }
     }
 
