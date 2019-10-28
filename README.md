@@ -21,17 +21,17 @@ Then run
 
 ```
 mvn package
-mvn mvn package assembly:single
+mvn package assembly:single
 ```
 
-This should build the `gecko/target/gecko-1.0-jar-with-dependencies.jar`.
+This should build the `target/gecko-1.0-jar-with-dependencies.jar`.
 It should have a proper class path set and includes all the dependency libs.
 
 ## Running
 
 Run it with
 
-```java -jar gecko-1.0-jar-with-dependencies.jar```
+```java -jar target/gecko-1.0-jar-with-dependencies.jar```
 
 To run on HiDPI screens, use
 
