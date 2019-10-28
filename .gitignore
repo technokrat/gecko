@@ -1,5 +1,6 @@
 #folders to ignore:...
 build/
+target/
 javadoc/
 dist/
 nbproject/private/
@@ -28,3 +29,9 @@ s_GeckoCIRCUITS.mex*
 /AdminTool/nbproject/private/
 /TranslationAdminTool/nbproject/private/
 /notInUse/TranslationAdminTool/nbproject/private/
+
+# Eclipse/VSCode stuff
+.classpath
+.settings
+.vscode
+.project
