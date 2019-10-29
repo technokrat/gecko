@@ -3,32 +3,6 @@ build/
 target/
 javadoc/
 dist/
-nbproject/private/
-build-impl.xml
-#patterns:
-*.prp
-*.lck
-*.log
-*.properties
-#*
-*#
-*.swp
-*.o
-*.class
-*~
-*.html
-*.svn
-*.lic
-*.req
-*jar.orig
-*log.orig
-manifest.mf
-*.orig
-s_GeckoCIRCUITS.mex*
-*.asv
-/AdminTool/nbproject/private/
-/TranslationAdminTool/nbproject/private/
-/notInUse/TranslationAdminTool/nbproject/private/
 
 # Eclipse/VSCode stuff
 .classpath
