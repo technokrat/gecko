@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Sat Aug 15 22:40:36 CEST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0173-f3da-242f-000067cbfad2 
+on database directory D:\OneDrive\NTB\GeckoCIRCUITS\Gecko3phEMIFilterOptimizer\Three-phase EMI Filter Optimizer\E3O_database\GeckoDatabase  with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Loaded from file:/D:/OneDrive/NTB/GeckoCIRCUITS/Gecko3phEMIFilterOptimizer/Three-phase%20EMI%20Filter%20Optimizer/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.2+12-46
+user.dir=d:\OneDrive\NTB\GeckoCIRCUITS\Gecko3phEMIFilterOptimizer\Three-phase EMI Filter Optimizer
+derby.system.home=D:\OneDrive\NTB\GeckoCIRCUITS\Gecko3phEMIFilterOptimizer\Three-phase EMI Filter Optimizer\E3O_database\
+Database Class Loader started - derby.database.classpath=''
