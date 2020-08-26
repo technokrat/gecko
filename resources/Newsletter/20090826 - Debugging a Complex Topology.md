@@ -22,3 +22,5 @@ You can draw the connection and click onto it. All connections on the same poten
 If you decide alternatively to omit lines and provide the connection between nodes by equal node labels ('MP' in the example shown), connected nodes are clearly visible. See also how nodes UR, US and UT are connected via labels.
 
 ![fig3](img/20090826_fig3.png)
+
+Simulation file [](ipes_files/YRectifier.ipes)
