@@ -1,0 +1,1 @@
+"jdk-13.0.2\bin\java.exe" -jar "GeckoCIRCUITS.jar" %1

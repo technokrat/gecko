@@ -1,16 +1,16 @@
 Model {
   Name			  "Gecko_VR1"
-  Version		  7.9
+  Version		  7.6
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.162"
+    ComputedModelVersion    "1.160"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
-  SavedCharacterEncoding  "UTF-8"
+  SavedCharacterEncoding  "windows-1252"
   SaveDefaultBlockParams  on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
@@ -19,17 +19,16 @@ Model {
   DataTypeOverrideAppliesTo "AllNumericTypes"
   MinMaxOverflowLogging	  "UseLocalSettings"
   MinMaxOverflowArchiveMode "Overwrite"
-  FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
   Created		  "Sun May 22 11:25:01 2005"
   Creator		  "drofenik"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "andreas"
+  LastModifiedBy	  "andy"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Oct 16 21:58:06 2012"
-  RTWModifiedTimeStamp	  272325470
-  ModelVersionFormat	  "1.%<AutoIncrement:162>"
+  LastModifiedDate	  "Wed Jun 22 16:06:56 2011"
+  RTWModifiedTimeStamp	  230659523
+  ModelVersionFormat	  "1.%<AutoIncrement:160>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -37,7 +36,6 @@ Model {
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
-  ShowDesignRanges	  off
   ShowLoopsOnError	  on
   IgnoreBidirectionalLines off
   ShowStorageClass	  off
@@ -105,15 +103,15 @@ Model {
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      1
-      Version		      "1.12.0"
+      Version		      "1.10.0"
       Array {
 	Type			"Handle"
 	Dimension		8
 	Simulink.SolverCC {
 	  $ObjectID		  2
-	  Version		  "1.12.0"
+	  Version		  "1.10.0"
 	  StartTime		  "0.0"
-	  StopTime		  "0.08"
+	  StopTime		  "0.0008"
 	  AbsTol		  "auto"
 	  FixedStep		  "1e-6"
 	  InitialStep		  "auto"
@@ -129,7 +127,6 @@ Model {
 	  MaxConsecutiveMinStep	  "1"
 	  RelTol		  "1e-3"
 	  SolverMode		  "SingleTasking"
-	  EnableConcurrentExecution off
 	  ConcurrentTasks	  off
 	  Solver		  "ode3"
 	  SolverName		  "ode3"
@@ -146,7 +143,7 @@ Model {
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  3
-	  Version		  "1.12.0"
+	  Version		  "1.10.0"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -158,7 +155,6 @@ Model {
 	  SaveFinalState	  off
 	  SaveCompleteFinalSimState off
 	  SaveFormat		  "Array"
-	  SignalLoggingSaveFormat "ModelDataLogs"
 	  SaveOutput		  on
 	  SaveState		  off
 	  SignalLogging		  on
@@ -178,7 +174,7 @@ Model {
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  4
-	  Version		  "1.12.0"
+	  Version		  "1.10.0"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    4
@@ -193,7 +189,6 @@ Model {
 	  ConditionallyExecuteInputs on
 	  InlineParams		  off
 	  UseIntDivNetSlope	  off
-	  UseFloatMulNetSlope	  off
 	  UseSpecifiedMinMax	  off
 	  InlineInvariantSignals  off
 	  OptimizeBlockIOStorage  off
@@ -226,11 +221,10 @@ Model {
 	  BufferReusableBoundary  on
 	  SimCompilerOptimization "Off"
 	  AccelVerboseBuild	  off
-	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  5
-	  Version		  "1.12.0"
+	  Version		  "1.10.0"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
@@ -285,7 +279,6 @@ Model {
 	  UnconnectedOutputMsg	  "warning"
 	  UnconnectedLineMsg	  "warning"
 	  SFcnCompatibilityMsg	  "none"
-	  FrameProcessingCompatibilityMsg "warning"
 	  UniqueDataStoreMsg	  "none"
 	  BusObjectLabelMismatch  "warning"
 	  RootOutportRequireBusObject "warning"
@@ -302,7 +295,6 @@ Model {
 	  ModelReferenceExtraNoncontSigs "error"
 	  StateNameClashWarn	  "warning"
 	  SimStateInterfaceChecksumMismatchMsg "warning"
-	  SimStateOlderReleaseMsg "error"
 	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "None"
 	  BusNameAdapt		  "WarnAndRepair"
@@ -314,11 +306,10 @@ Model {
 	  SFInvalidInputDataAccessInChartInitDiag "warning"
 	  SFNoUnconditionalDefaultTransitionDiag "warning"
 	  SFTransitionOutsideNaturalParentDiag "warning"
-	  SFUnconditionalTransitionShadowingDiag "warning"
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  6
-	  Version		  "1.12.0"
+	  Version		  "1.10.0"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
@@ -355,7 +346,7 @@ Model {
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  7
-	  Version		  "1.12.0"
+	  Version		  "1.10.0"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
 	  EnableParallelModelReferenceBuilds off
@@ -370,7 +361,7 @@ Model {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  8
-	  Version		  "1.12.0"
+	  Version		  "1.10.0"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
 	  SFSimEcho		  on
@@ -385,7 +376,7 @@ Model {
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  9
-	  Version		  "1.12.0"
+	  Version		  "1.10.0"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    6
@@ -426,9 +417,7 @@ Model {
 	  GenerateTraceReportSf	  off
 	  GenerateTraceReportEml  off
 	  GenerateCodeInfo	  off
-	  GenerateWebview	  off
-	  GenerateCodeMetricsReport off
-	  GenerateCodeReplacementReport	off
+	  GenerateSLWebview	  off
 	  RTWCompilerOptimization "Off"
 	  CheckMdlBeforeBuild	  "Off"
 	  CustomRebuildMode	  "OnUpdate"
@@ -437,7 +426,7 @@ Model {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      10
-	      Version		      "1.12.0"
+	      Version		      "1.10.0"
 	      Array {
 		Type			"Cell"
 		Dimension		16
@@ -497,7 +486,7 @@ Model {
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      11
-	      Version		      "1.12.0"
+	      Version		      "1.10.0"
 	      Array {
 		Type			"Cell"
 		Dimension		15
@@ -521,10 +510,10 @@ Model {
 	      TargetFcnLib	      "ansi_tfl_tmw.mat"
 	      TargetLibSuffix	      ""
 	      TargetPreCompLibLocation ""
-	      CodeReplacementLibrary  "ANSI_C"
+	      TargetFunctionLibrary   "ANSI_C"
 	      UtilityFuncGeneration   "Auto"
 	      ERTMultiwordTypeDef     "System defined"
-	      CodeExecutionProfiling  off
+	      ERTCodeCoverageTool     "None"
 	      ERTMultiwordLength      256
 	      MultiwordLength	      2048
 	      GenerateFullHeader      on
@@ -534,7 +523,6 @@ Model {
 	      ModelReferenceCompliant off
 	      ParMdlRefBuildCompliant on
 	      CompOptLevelCompliant   on
-	      ConcurrentExecutionCompliant on
 	      IncludeMdlTerminateFcn  on
 	      GeneratePreprocessorConditionals "Disable all"
 	      CombineOutputUpdateFcns off
@@ -559,7 +547,6 @@ Model {
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    off
 	      AutosarCompliant	      off
-	      GRTInterface	      on
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -571,7 +558,6 @@ Model {
 	      RTWCAPISignals	      off
 	      RTWCAPIParams	      off
 	      RTWCAPIStates	      off
-	      RTWCAPIRootIO	      off
 	      GenerateASAP2	      off
 	    }
 	    PropName		    "Components"
@@ -582,7 +568,7 @@ Model {
       Name		      "Configuration"
       ExtraOptions	      "-aPrefixModelToSubsysFcnNames=1 "
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 374, 250, 1269, 833 ] 
+      ConfigPrmDlgPosition    " [ 372, 227, 1271, 837 ] "
     }
     PropName		    "ConfigurationSets"
   }
@@ -590,7 +576,6 @@ Model {
     $PropName		    "ActiveConfigurationSet"
     $ObjectID		    1
   }
-  ExplicitPartitioning	  off
   BlockDefaults {
     ForegroundColor	    "black"
     BackgroundColor	    "white"
@@ -691,12 +676,11 @@ Model {
       OutMax		      "[]"
       OutDataTypeStr	      "Inherit: All ports same datatype"
       LockScale		      off
-      InputProcessing	      "Inherited"
       ZeroCross		      on
       SampleTime	      "-1"
     }
     Block {
-      BlockType		      S-Function
+      BlockType		      "S-Function"
       FunctionName	      "system"
       SFunctionModules	      "''"
       PortCounts	      "[]"
@@ -713,7 +697,6 @@ Model {
       YMax		      "5"
       SaveToWorkspace	      off
       SaveName		      "ScopeData"
-      DataFormat	      "Array"
       LimitDataPoints	      on
       MaxDataPoints	      "5000"
       Decimation	      "1"
@@ -747,7 +730,7 @@ Model {
   }
   System {
     Name		    "Gecko_VR1"
-    Location		    [128, 159, 1221, 892]
+    Location		    [564, 118, 1657, 851]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -779,7 +762,6 @@ Model {
 	axes2			"%<SignalLabel>"
 	axes3			"%<SignalLabel>"
       }
-      ShowLegends	      off
       YMin		      "-30~-90~-30"
       YMax		      "30~30~90"
       DataFormat	      "StructureWithTime"
@@ -922,11 +904,11 @@ Model {
       }
     }
     Block {
-      BlockType		      S-Function
+      BlockType		      "S-Function"
       Name		      "GeckoCIRCUITS"
       SID		      "64"
       Ports		      [3, 3]
-      Position		      [700, 309, 850, 371]
+      Position		      [680, 309, 830, 371]
       FunctionName	      "s_GeckoCIRCUITS"
       Parameters	      "'C:/GeckoSimulink/vr1_simulink.ipes'"
       EnableBusSupport	      off
@@ -1105,7 +1087,6 @@ Model {
 	axes2			"%<SignalLabel>"
 	axes3			"%<SignalLabel>"
       }
-      ShowLegends	      off
       YMin		      "535~252.5~282.5"
       YMax		      "577.5~275~305"
       SaveName		      "ScopeData1"
@@ -1622,7 +1603,7 @@ Model {
     }
     Line {
       Name		      "uNS"
-      Labels		      [0, 0]
+      Labels		      [0, 0; 0, 0]
       SrcBlock		      "Demux"
       SrcPort		      2
       Points		      [45, 0; 0, -155; -785, 0; 0, 205]
@@ -1638,7 +1619,7 @@ Model {
     }
     Line {
       Name		      "uNT"
-      Labels		      [0, 0]
+      Labels		      [0, 0; 0, 0]
       SrcBlock		      "Demux"
       SrcPort		      3
       Points		      [50, 0; 0, -175; -820, 0; 0, 365]
@@ -1654,7 +1635,7 @@ Model {
     }
     Line {
       Name		      "gtR"
-      Labels		      [0, 0]
+      Labels		      [0, 0; 0, 0]
       SrcBlock		      "Logical\nOperator1"
       SrcPort		      1
       Points		      [55, 0; 0, 125]
@@ -1663,7 +1644,7 @@ Model {
     }
     Line {
       Name		      "gtT"
-      Labels		      [0, 0]
+      Labels		      [0, 0; 0, 0]
       SrcBlock		      "Logical\nOperator5"
       SrcPort		      1
       Points		      [50, 0; 0, -135]
@@ -1672,7 +1653,7 @@ Model {
     }
     Line {
       Name		      "gtS"
-      Labels		      [0, 0]
+      Labels		      [0, 0; 0, 0]
       SrcBlock		      "Logical\nOperator3"
       SrcPort		      1
       DstBlock		      "GeckoCIRCUITS"
@@ -1683,7 +1664,7 @@ Model {
       Labels		      [3, 0]
       SrcBlock		      "GeckoCIRCUITS"
       SrcPort		      1
-      Points		      [10, 0; 0, -45]
+      Points		      [30, 0; 0, -45]
       DstBlock		      "Demux"
       DstPort		      1
     }
@@ -1692,7 +1673,7 @@ Model {
       Labels		      [3, 0]
       SrcBlock		      "GeckoCIRCUITS"
       SrcPort		      3
-      Points		      [10, 0; 0, 45]
+      Points		      [30, 0; 0, 45]
       DstBlock		      "Demux1"
       DstPort		      1
     }
