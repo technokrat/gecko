@@ -18,15 +18,15 @@ There are many example, but really useful are the PDF tutorials:
 - Buck converter
   - [buck with ideal switch](./resources/Education_ETHZ\ex_1.ipes)
   - ".\resources\education_www.ipes.ethz.ch\buck_simple.ipes"
-  - [high side buck with ideal switch](./resources/Education_ETHZ\LESI_R3.ipes)
+  - [high side buck with ideal switch](./resources/Education_ETHZ/LESI_R3.ipes)
   - [Quasi resonant buck converter](Education_ETHZ\LESI_R5.ipes)
   - 
 - Boost converter
   
 - Buck/boost converter
   - [buck-boost simple](".\resources\education_www.ipes.ethz.ch\buckBoost_simple.ipes")
-  - [buck-boost with open-loop control and ideal switch](./resources/Topologies\BuckBoost_const_dutyCycle.ipes)
-  - [buck-boost with open-loop control with thermal model](./resources/Topologies\BuckBoost_thermal.ipes)
+  - [buck-boost with open-loop control and ideal switch](./resources/Topologies/BuckBoost_const_dutyCycle.ipes)
+  - [buck-boost with open-loop control with thermal model](./resources/Topologies/BuckBoost_thermal.ipes)
 
 - [Cuk converter](".\resources\education_www.ipes.ethz.ch\cuk_simple.ipes")
 - [Sepic converter](".\resources\education_www.ipes.ethz.ch\sepic_simple.ipes")
