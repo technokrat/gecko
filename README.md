@@ -14,8 +14,6 @@ All the source is from the original author. We just modified it such that it run
 
 Technokrat GmbH takes no credit whatsoever on the original codebase.
 
-ciao si il corso e molto interessante
-
 ## Prerequisites
 
 To build, you need maven 3 installed and a more recent JDK. Everything from JDK9 to JDK13 should work.
