@@ -9,3 +9,5 @@ dist/
 .settings
 .vscode
 .project
+/bin_jdk13/jdk-13.0.2
+/bin_jdk8/jdk1.8.0_261

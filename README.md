@@ -1,6 +1,9 @@
 # GeckoCircuits
 
-## What is it?
+## What is GeckoCIRCUITS?
+See the [FAQ](FAQ.md) section
+
+## What is this repo?
 
 This is a JDK13 runnable port of [GeckoCircuits](https://sourceforge.net/projects/geckocircuits/).
 The main goal was to enable HiDPI monitors to display GeckoCircuits in reasonable size.
